@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1776D723E5C9A800583B56 /* Product+Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1776D623E5C9A800583B56 /* Product+Payment.swift */; };
+		FA23EFCC2437BB05000EBA46 /* SwiftHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = FA23EFCB2437BB05000EBA46 /* SwiftHelpers */; };
+		FA3DE9AB243B163E005E3D72 /* StripeServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DE9AA243B163E005E3D72 /* StripeServiceMock.swift */; };
+		FA3DE9AE243B18D8005E3D72 /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DE9AD243B18D8005E3D72 /* WebServiceMock.swift */; };
+		FA3DE9B0243B2558005E3D72 /* PaymentAuthorizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DE9AF243B2558005E3D72 /* PaymentAuthorizerMock.swift */; };
+		FA4C1956243872D300A9EBC7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C1955243872D300A9EBC7 /* Observable.swift */; };
+		FA502E4D23E1BDB70031B11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA502E4C23E1BDB70031B11F /* AppDelegate.swift */; };
+		FA502E4F23E1BDB70031B11F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA502E4E23E1BDB70031B11F /* SceneDelegate.swift */; };
+		FA502E5123E1BDB70031B11F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA502E5023E1BDB70031B11F /* PaymentViewController.swift */; };
+		FA502E5623E1BDB90031B11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA502E5523E1BDB90031B11F /* Assets.xcassets */; };
+		FA502E5923E1BDB90031B11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA502E5723E1BDB90031B11F /* LaunchScreen.storyboard */; };
+		FA502E6423E1BDB90031B11F /* PaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA502E6323E1BDB90031B11F /* PaymentTests.swift */; };
+		FA84461D23E1CDED005E74F0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84461C23E1CDED005E74F0 /* Product.swift */; };
+		FA84461F23E1DB30005E74F0 /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84461E23E1DB30005E74F0 /* StripeService.swift */; };
+		FA84462123E1DC99005E74F0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84462023E1DC99005E74F0 /* WebService.swift */; };
+		FA84462323E210AA005E74F0 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84462223E210A9005E74F0 /* PaymentViewModel.swift */; };
+		FA9A056924379F4500EE9BF7 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A056824379F4500EE9BF7 /* PaymentView.swift */; };
+		FAD9A30D2438A3A0009807BE /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9A30C2438A3A0009807BE /* LoadingButton.swift */; };
+		FAD9A30F2438CB9C009807BE /* PaymentAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9A30E2438CB9C009807BE /* PaymentAuthorizer.swift */; };
+		FAE20007243B43B700F85989 /* PaymentTests+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE20006243B43B700F85989 /* PaymentTests+Observer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA502E6023E1BDB90031B11F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA502E4123E1BDB70031B11F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA502E4823E1BDB70031B11F;
+			remoteInfo = NonReactiveViewModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA1776D623E5C9A800583B56 /* Product+Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Payment.swift"; sourceTree = "<group>"; };
+		FA3DE9AA243B163E005E3D72 /* StripeServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeServiceMock.swift; sourceTree = "<group>"; };
+		FA3DE9AD243B18D8005E3D72 /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		FA3DE9AF243B2558005E3D72 /* PaymentAuthorizerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAuthorizerMock.swift; sourceTree = "<group>"; };
+		FA4C1955243872D300A9EBC7 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		FA502E4923E1BDB70031B11F /* FakePayment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakePayment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA502E4C23E1BDB70031B11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA502E4E23E1BDB70031B11F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA502E5023E1BDB70031B11F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		FA502E5523E1BDB90031B11F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA502E5823E1BDB90031B11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA502E5A23E1BDB90031B11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA502E5F23E1BDB90031B11F /* FakePaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakePaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA502E6323E1BDB90031B11F /* PaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTests.swift; sourceTree = "<group>"; };
+		FA502E6523E1BDB90031B11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA84461C23E1CDED005E74F0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA84461E23E1DB30005E74F0 /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
+		FA84462023E1DC99005E74F0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FA84462223E210A9005E74F0 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		FA9A056824379F4500EE9BF7 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		FAD9A30C2438A3A0009807BE /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		FAD9A30E2438CB9C009807BE /* PaymentAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAuthorizer.swift; sourceTree = "<group>"; };
+		FAE20006243B43B700F85989 /* PaymentTests+Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentTests+Observer.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA502E4623E1BDB70031B11F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA23EFCC2437BB05000EBA46 /* SwiftHelpers in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA502E5C23E1BDB90031B11F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA11C3662438EC91003DA80D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA84462023E1DC99005E74F0 /* WebService.swift */,
+				FA84461E23E1DB30005E74F0 /* StripeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA23EFCD2437C0BD000EBA46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9A30C2438A3A0009807BE /* LoadingButton.swift */,
+				FA9A056824379F4500EE9BF7 /* PaymentView.swift */,
+				FA502E5023E1BDB70031B11F /* PaymentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA23EFCE2437C0CA000EBA46 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				FA9A056624379EE300EE9BF7 /* Model */,
+				FA23EFCD2437C0BD000EBA46 /* View */,
+				FAD9A30E2438CB9C009807BE /* PaymentAuthorizer.swift */,
+				FA84462223E210A9005E74F0 /* PaymentViewModel.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		FA3DE9AC243B180B005E3D72 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3DE9AA243B163E005E3D72 /* StripeServiceMock.swift */,
+				FA3DE9AD243B18D8005E3D72 /* WebServiceMock.swift */,
+				FA3DE9AF243B2558005E3D72 /* PaymentAuthorizerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FA502E4023E1BDB70031B11F = {
+			isa = PBXGroup;
+			children = (
+				FA502E4B23E1BDB70031B11F /* FakePayment */,
+				FA502E6223E1BDB90031B11F /* FakePaymentTests */,
+				FA502E4A23E1BDB70031B11F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA502E4A23E1BDB70031B11F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA502E4923E1BDB70031B11F /* FakePayment.app */,
+				FA502E5F23E1BDB90031B11F /* FakePaymentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA502E4B23E1BDB70031B11F /* FakePayment */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0865243B09A900A89B1C /* Scenes */,
+				FA9A056724379F0200EE9BF7 /* Supporting files */,
+			);
+			path = FakePayment;
+			sourceTree = "<group>";
+		};
+		FA502E6223E1BDB90031B11F /* FakePaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3DE9AC243B180B005E3D72 /* Mocks */,
+				FA502E6323E1BDB90031B11F /* PaymentTests.swift */,
+				FAE20006243B43B700F85989 /* PaymentTests+Observer.swift */,
+				FA502E6523E1BDB90031B11F /* Info.plist */,
+			);
+			path = FakePaymentTests;
+			sourceTree = "<group>";
+		};
+		FA9A056624379EE300EE9BF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA84461C23E1CDED005E74F0 /* Product.swift */,
+				FA1776D623E5C9A800583B56 /* Product+Payment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA9A056724379F0200EE9BF7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FA502E4C23E1BDB70031B11F /* AppDelegate.swift */,
+				FA502E4E23E1BDB70031B11F /* SceneDelegate.swift */,
+				FA11C3662438EC91003DA80D /* Services */,
+				FAE20008243B481C00F85989 /* Helpers */,
+				FA502E5523E1BDB90031B11F /* Assets.xcassets */,
+				FA502E5723E1BDB90031B11F /* LaunchScreen.storyboard */,
+				FA502E5A23E1BDB90031B11F /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		FAAD0865243B09A900A89B1C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FA23EFCE2437C0CA000EBA46 /* Payment */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FAE20008243B481C00F85989 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C1955243872D300A9EBC7 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA502E4823E1BDB70031B11F /* FakePayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA502E6823E1BDB90031B11F /* Build configuration list for PBXNativeTarget "FakePayment" */;
+			buildPhases = (
+				FA502E4523E1BDB70031B11F /* Sources */,
+				FA502E4623E1BDB70031B11F /* Frameworks */,
+				FA502E4723E1BDB70031B11F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FakePayment;
+			packageProductDependencies = (
+				FA23EFCB2437BB05000EBA46 /* SwiftHelpers */,
+			);
+			productName = NonReactiveViewModel;
+			productReference = FA502E4923E1BDB70031B11F /* FakePayment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA502E5E23E1BDB90031B11F /* FakePaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA502E6B23E1BDB90031B11F /* Build configuration list for PBXNativeTarget "FakePaymentTests" */;
+			buildPhases = (
+				FA502E5B23E1BDB90031B11F /* Sources */,
+				FA502E5C23E1BDB90031B11F /* Frameworks */,
+				FA502E5D23E1BDB90031B11F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA502E6123E1BDB90031B11F /* PBXTargetDependency */,
+			);
+			name = FakePaymentTests;
+			productName = NonReactiveViewModelTests;
+			productReference = FA502E5F23E1BDB90031B11F /* FakePaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA502E4123E1BDB70031B11F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = tonezone;
+				TargetAttributes = {
+					FA502E4823E1BDB70031B11F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FA502E5E23E1BDB90031B11F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FA502E4823E1BDB70031B11F;
+					};
+				};
+			};
+			buildConfigurationList = FA502E4423E1BDB70031B11F /* Build configuration list for PBXProject "FakePayment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA502E4023E1BDB70031B11F;
+			packageReferences = (
+				FA23EFCA2437BB05000EBA46 /* XCRemoteSwiftPackageReference "SwiftHelpers" */,
+			);
+			productRefGroup = FA502E4A23E1BDB70031B11F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA502E4823E1BDB70031B11F /* FakePayment */,
+				FA502E5E23E1BDB90031B11F /* FakePaymentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA502E4723E1BDB70031B11F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA502E5923E1BDB90031B11F /* LaunchScreen.storyboard in Resources */,
+				FA502E5623E1BDB90031B11F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA502E5D23E1BDB90031B11F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA502E4523E1BDB70031B11F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA502E5123E1BDB70031B11F /* PaymentViewController.swift in Sources */,
+				FA84461D23E1CDED005E74F0 /* Product.swift in Sources */,
+				FA9A056924379F4500EE9BF7 /* PaymentView.swift in Sources */,
+				FA84462123E1DC99005E74F0 /* WebService.swift in Sources */,
+				FA502E4D23E1BDB70031B11F /* AppDelegate.swift in Sources */,
+				FAD9A30F2438CB9C009807BE /* PaymentAuthorizer.swift in Sources */,
+				FA84461F23E1DB30005E74F0 /* StripeService.swift in Sources */,
+				FAD9A30D2438A3A0009807BE /* LoadingButton.swift in Sources */,
+				FA4C1956243872D300A9EBC7 /* Observable.swift in Sources */,
+				FA1776D723E5C9A800583B56 /* Product+Payment.swift in Sources */,
+				FA502E4F23E1BDB70031B11F /* SceneDelegate.swift in Sources */,
+				FA84462323E210AA005E74F0 /* PaymentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA502E5B23E1BDB90031B11F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE20007243B43B700F85989 /* PaymentTests+Observer.swift in Sources */,
+				FA3DE9AB243B163E005E3D72 /* StripeServiceMock.swift in Sources */,
+				FA3DE9AE243B18D8005E3D72 /* WebServiceMock.swift in Sources */,
+				FA502E6423E1BDB90031B11F /* PaymentTests.swift in Sources */,
+				FA3DE9B0243B2558005E3D72 /* PaymentAuthorizerMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA502E6123E1BDB90031B11F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA502E4823E1BDB70031B11F /* FakePayment */;
+			targetProxy = FA502E6023E1BDB90031B11F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA502E5723E1BDB90031B11F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA502E5823E1BDB90031B11F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA502E6623E1BDB90031B11F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA502E6723E1BDB90031B11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA502E6923E1BDB90031B11F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733W6R73TS;
+				INFOPLIST_FILE = "FakePayment/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonezone.FakePayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA502E6A23E1BDB90031B11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733W6R73TS;
+				INFOPLIST_FILE = "FakePayment/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonezone.FakePayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA502E6C23E1BDB90031B11F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733W6R73TS;
+				INFOPLIST_FILE = FakePaymentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonezone.FakePaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FakePayment.app/FakePayment";
+			};
+			name = Debug;
+		};
+		FA502E6D23E1BDB90031B11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733W6R73TS;
+				INFOPLIST_FILE = FakePaymentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonezone.FakePaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FakePayment.app/FakePayment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA502E4423E1BDB70031B11F /* Build configuration list for PBXProject "FakePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA502E6623E1BDB90031B11F /* Debug */,
+				FA502E6723E1BDB90031B11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA502E6823E1BDB90031B11F /* Build configuration list for PBXNativeTarget "FakePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA502E6923E1BDB90031B11F /* Debug */,
+				FA502E6A23E1BDB90031B11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA502E6B23E1BDB90031B11F /* Build configuration list for PBXNativeTarget "FakePaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA502E6C23E1BDB90031B11F /* Debug */,
+				FA502E6D23E1BDB90031B11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA23EFCA2437BB05000EBA46 /* XCRemoteSwiftPackageReference "SwiftHelpers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:tonezone6/SwiftHelpers.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA23EFCB2437BB05000EBA46 /* SwiftHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA23EFCA2437BB05000EBA46 /* XCRemoteSwiftPackageReference "SwiftHelpers" */;
+			productName = SwiftHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA502E4123E1BDB70031B11F /* Project object */;
+}

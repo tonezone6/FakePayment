@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftHelpers",
+        "repositoryURL": "git@github.com:tonezone6/SwiftHelpers.git",
+        "state": {
+          "branch": "master",
+          "revision": "a42bddb097941799fa3622a7ec8634c5790950f1",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
